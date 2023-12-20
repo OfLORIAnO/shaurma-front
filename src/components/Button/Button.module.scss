@@ -1,0 +1,64 @@
+@import '../../scss/index';
+
+.button {
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition-duration: 0.2s;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    transition-duration: 0.2s;
+    svg {
+        height: 18px;
+        width: 18px;
+        display: flex;
+    }
+    @media (max-width: 500px) {
+        padding: 10px 15px;
+        font-size: 11px;
+        font-weight: 600;
+    }
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+}
+.primary {
+    border: 1px solid $primary;
+    color: #fff;
+    background: $primary;
+    &:hover {
+        background: darken($primary, 5%);
+        transition-duration: 0.2s;
+    }
+}
+.profile {
+    @media (max-width: 600px) {
+        margin: 20px 0px 0px 0px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+.default {
+    border: 1px solid #d0d5dd;
+    color: $font-gray;
+    // background: #fff;
+    background: transparent;
+    &:hover {
+        transition-duration: 0.2s;
+        background: darken(#f3f4f6, 5%);
+    }
+}
+.dark {
+    color: #fff !important;
+}
+.dark.default {
+    // background: #121212;
+    border: 1px solid $primary;
+    &:hover {
+        background: lighten(#121212, 8%);
+    }
+}

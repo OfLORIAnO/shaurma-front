@@ -1,0 +1,108 @@
+.author {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    &:hover {
+        & > * {
+            text-decoration: underline;
+        }
+    }
+    &__info {
+        margin: 0px 0px 0px 5px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@import './vars.scss';
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+button {
+    border: none;
+}
+.login,
+.register {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px 20px 0px;
+    width: 400px;
+    & > .form.dark {
+        border: 1px solid rgba($color: #fff, $alpha: 0.2) !important;
+    }
+}
+
+.form {
+    width: 100%;
+    border: 1px solid rgba($color: #000, $alpha: 0.3);
+    padding: 30px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+        margin: 10px 0px 0px 0px;
+    }
+}
+body {
+    transition-duration: 0.1s;
+}
+.markdown {
+    ul > li {
+        list-style: circle;
+    }
+    ol > li {
+        list-style: decimal;
+    }
+    blockquote {
+        display: flex;
+        &::before {
+            content: '❝';
+        }
+        &::after {
+            content: '❞';
+        }
+    }
+    h1 {
+        font-size: 42px;
+    }
+    em {
+        font-style: italic;
+    }
+}
+
+.markdown_description {
+    ul > li {
+        list-style: circle;
+    }
+    ol > li {
+        list-style: decimal;
+    }
+    blockquote {
+        display: flex;
+        &::before {
+            content: '❝';
+        }
+        &::after {
+            content: '❞';
+        }
+    }
+    em {
+        font-style: italic;
+    }
+}
+.author {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    &:hover {
+        & > * {
+            text-decoration: underline;
+        }
+    }
+    &__info {
+        margin: 0px 0px 0px 5px;
+        display: flex;
+        flex-direction: column;
+    }
+}

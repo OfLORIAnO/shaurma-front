@@ -1,0 +1,18 @@
+@import '../../scss/index';
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__content {
+        border-radius: 10px;
+        padding: 20px;
+        background: darken($main, 5%);
+        &.dark {
+            background: lighten(#121212, 5%);
+        }
+    }
+}

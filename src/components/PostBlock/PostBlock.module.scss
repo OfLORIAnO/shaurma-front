@@ -1,0 +1,129 @@
+@import '../../scss/index';
+.post {
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background: darken($main, 5%);
+    display: flex;
+    flex-direction: column;
+    &.dark {
+        background: lighten(#121212, 5%) !important;
+    }
+
+    &__control {
+        display: flex;
+        margin: 0px 0px 10px 0px;
+        & > *:not(:last-child) {
+            margin: 0px 10px 0px 0px;
+        }
+        button {
+            svg {
+                margin: 0px 5px 0px 0px;
+            }
+        }
+    }
+}
+.image {
+    height: 250px;
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    &.large {
+        height: 400px;
+        @media (max-width: 800px) {
+            height: 350px;
+        }
+        @media (max-width: 600px) {
+            height: 300px;
+        }
+    }
+}
+.tags {
+    padding: 24px 0px 0px 0px;
+    & > * {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    & > *:not(:last-child) {
+        margin: 0px 10px 0px 0px;
+    }
+}
+.text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    & > *:last-child {
+        margin: 10px 0px 0px 0px;
+    }
+}
+.stats {
+    width: 60px;
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-end;
+    svg {
+        height: 18px;
+        margin: 0px 5px 0px 0px;
+    }
+}
+.views,
+.likes {
+    display: flex;
+    align-items: flex-end;
+    flex: 0 0 60px;
+}
+.views {
+    justify-content: flex-start;
+}
+.likes {
+    margin: 0px 0px 0px 10px;
+}
+.your {
+    position: relative;
+    &__text {
+        border-radius: 10px;
+        padding: 5px 10px;
+        background: $primary;
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 50px;
+    }
+}
+.modalDelete {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__content {
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 300px;
+        background: darken($main, 5%);
+        &.dark {
+            background: lighten(#121212, 5%);
+        }
+    }
+    &__buttons {
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.info {
+    flex: 1 0 auto;
+}

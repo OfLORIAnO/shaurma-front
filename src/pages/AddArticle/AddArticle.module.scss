@@ -1,0 +1,24 @@
+
+@import '../../scss/index';
+.articleText {
+    background: lighten(#121212, 5%);
+}
+.header {
+    margin: 0px 0px 10px 0px;
+}
+.addImage {
+    margin: 0px 0px 20px 0px;
+}
+.imageLink {
+    // margin: 10px 0px 0px 0px;
+    width: 100%;
+}
+.body {
+    padding: 0 0 20px 0;
+    
+}
+.button_add {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
